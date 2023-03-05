@@ -70,3 +70,6 @@ const ProductForm = ({ formData, handleChange, handleSubmit, text }) => {
 };
 
 export default ProductForm;
+
+// inputları doıldurup boşaltabilmek için value attributeunu kullandık ve değer olarak da formDatadan gelen verileri koyduk
+//? tek bir handlechange fonksiyonuyla birden fazla inputtan veri almış olduk

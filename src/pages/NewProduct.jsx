@@ -14,7 +14,7 @@ const NewProduct = () => {
   const [formData, setFormData] = useState(initalState);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
+    setFormData({ ...formData, [e.target.id]: e.target.value }); //change eventının gerçekleştiği inputtaki id attribute u ile formDatamdaki key değerlerim aynı olduğu için dinamik bir şekilde formData mı güncelleybiliyorum
     console.log({ [e.target.id]: e.target.value });
   };
 
@@ -22,7 +22,7 @@ const NewProduct = () => {
     e.preventDefault();
     try {
       await axios.post(url, formData);
-      setFormData(initalState);
+      setFormData(initalState); //post işleminden sonra formu boşaltmak için initialState değerini verdik
     } catch (error) {
       console.log(error);
     }

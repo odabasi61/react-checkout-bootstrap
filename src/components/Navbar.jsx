@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-info bg-body-tertiary">
       <div className="container-fluid">
         <NavLink className="navbar-brand" to="/">
-          Checkout
+          HOME
         </NavLink>
         <button
           className="navbar-toggler"
@@ -21,11 +21,6 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink className="nav-link" aria-current="page" to="/">
-                Home
-              </NavLink>
-            </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/new-product">
                 New Product
