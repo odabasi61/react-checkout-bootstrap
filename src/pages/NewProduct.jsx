@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ProductForm from "../components/ProductForm";
 import axios from "axios";
 
+// bu sayfada yeni ürün ekleme işlemlerini yapıp parametreleri product forma gönderiyoruz.
+
 const initalState = {
   name: "",
   image: "",
@@ -15,7 +17,7 @@ const NewProduct = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value }); //change eventının gerçekleştiği inputtaki id attribute u ile formDatamdaki key değerlerim aynı olduğu için dinamik bir şekilde formData mı güncelleybiliyorum
-    console.log({ [e.target.id]: e.target.value });
+    // console.log({ [e.target.id]: e.target.value });
   };
 
   const handleSubmit = async (e) => {

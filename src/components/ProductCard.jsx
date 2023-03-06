@@ -45,17 +45,17 @@ const ProductCard = ({ item, getProducts }) => {
   };
 
   return (
-    <div className="card shadow-lg mb-3">
+    <div className="card shadow-lg mb-3 rounded-2">
       <div className="row g-0">
-        <div className="col-md-5">
+        <div className="col-lg-5">
           <img
             src={image}
-            className="w-100 h-100 rounded-start"
+            className="w-100 h-100 rounded-2"
             alt={"name"}
             title={""}
           />
         </div>
-        <div className="col-md-7">
+        <div className="col-lg-7">
           <div className="card-body">
             <h5 className="card-title" role="button" onClick={editProduct}>
               {name}

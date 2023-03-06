@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ProductForm from "../components/ProductForm";
 
+// bu kısım kart içerisindeki ürünü edit etmeye yarar
+
 const UpdateProduct = () => {
   const { state: item } = useLocation();
   const url = process.env.REACT_APP_API_URL;
@@ -11,7 +13,7 @@ const UpdateProduct = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
-    console.log({ [e.target.id]: e.target.value });
+    // console.log({ [e.target.id]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -38,5 +40,5 @@ const UpdateProduct = () => {
 
 export default UpdateProduct;
 
-//! productform componentini 2 sayfa da çağırmak için aynı props değerleriyle çağırıyorum.
+//! productform componentini 2 sayfada çağırmak için aynı props değerleriyle çağırıyorum.
 //! text propsu oluşturarak da product form da dinamik title oluşturmuş oldum

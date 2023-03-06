@@ -61,7 +61,8 @@ const ProductForm = ({ formData, handleChange, handleSubmit, text }) => {
         </div>
         <div class="text-center">
           <button type="submit" class="add-to-cart btn btn-success btn-sm">
-            <i class="fa-solid fa-cart-plus me-2"></i>Save To {text} Product
+            <i class="fa-solid fa-cart-plus"></i>
+            {text} Product
           </button>
         </div>
       </form>

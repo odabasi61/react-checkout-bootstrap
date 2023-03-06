@@ -1,9 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.app{
-    min-height: 100vh;
+.app {
+  min-height: 100vh;
+  background: linear-gradient(
+    190deg,
+    rgba(49, 154, 153, 1) 15%,
+    rgba(158, 163, 75, 1) 50%,
+    rgba(56, 111, 112, 1) 85%
+  );
+  padding-bottom: 3rem;
 }
